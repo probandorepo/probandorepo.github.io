@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo de productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/pnglogo.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+ <!-- Header -->
+ <nav class="navbar navbar-expand-lg navbar-light shadow" 
+style=" position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+width: 100%;
+height: 80px"
+
+ >
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <img class="imagenRey" src="/img/logoblanco-removebg-preview.png" alt="Logotipo de Metalúrgica El Rey">
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#abo">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+    
+               <div class="navbar align-self-center d-flex caricon">
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-cart"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                            />
+                        </svg>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                    </div>
+    
+
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-product hidden">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito"></span>
+                                    <p class="titulo-producto-carrito"></p>
+                                    <span class="precio-producto-carrito"></span>
+                                </div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="icon-close"
+                                
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="cart-total hidden">
+                            <div class="cart-total-wrap">
+                                <h3>Total:</h3>
+                                <span class="total-pagar"></span>
+                            </div>
+                           <p>Presiona el siguiente botón para avanzar al siguiente paso</p>
+                            <button class = "btn-finish" style="background: tomato; margin-top: -15px;">Finalizar compra</button>
+                        </div>
+                        <p class="cart-empty">El carrito está vacío</p>
+                    </div>
+                </div>
+              
+            </div>
+              
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    <!--itemshops-->
+    <div class="filters">
+        <div class="filters-cont">
+            <ul>
+                <li class="filters-item" data-category="all"><a href="#">Todos</a></li>
+            <li class="filters-item" data-category="maquinaria"><a href="#">Maquinaria</a></li>
+            <li class="filters-item" data-category="carretilla"><a href="#">Carretillas</a></li>
+            <li class="filters-item" data-category="hogar"><a href="#">Hogar</a></li>
+            <li class="filters-item" data-category="constru"><a href="#">Construcción</a></li>
+            <li class="filters-item" data-category="seg"><a href="#">Seguridad</a></li>
+            <li class="filters-item" data-category="repuestos"><a href="#">Repuestos</a></li>
+            <li class="filters-item" data-category="zing"><a href="#">Zingueria</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <button class="carousel-prev">❮</button>
+        <div class="container-items">
+            <div class="item" data-category="maquinaria">
+                <div class="item-img">
+                    <img
+                        src="assets/img/HormigoneraComun.png"
+                        alt="producto"
+                    />
+                
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momento las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Hormigonera reforzada</h2>
+                    <p class="price">$80</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="maquinaria">
+                <div class="item-img">
+                    <img
+                        src="assets/img/HormigoneraCaballete.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Hormigonera con caballete</h2>
+                    <p class="price">$20</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img
+                        src="assets/img/CarretillaMarron.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº20</h2>
+                    <p class="price">$90</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img
+                        src="assets/img/CarretillaAzul.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº18</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img
+                        src="assets/img/CarretillaGris.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº16</h2>
+                    <p class="price">$90</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="hogar">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                    src="assets/img/Calefones.png"
+                    alt="producto"
+                />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+            
+                <div class="info-product">
+                    <h2>Calefones a leña 90L/120L</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Andamio1.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Andamios plegables</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Caballete.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Caballetes para hormigonera</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Camara.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cámara de carretilla</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/Cubierta.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cubierta de carretilla</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/cubiertachapa.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Rueda con llanta de chapa</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img
+                        src="assets/img/valde.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Valde de albañileria</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img class="imagen-correr-grave"
+                        src="assets/img/TachoHormigonera.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Tacho con batidores</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/plastica.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Rueda de plástico macizo</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/Motor1hp.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Motor ANGAR 1HP</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/Motor34.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Motor ANGAR 3/4HP</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img
+                        src="assets/img/corona.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Corona para hormigonera</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Ganchitos.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Mensulas</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Engranaje.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Piñones para hormigonera</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Canaletas2.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Canaletas chapa galvanizada</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Caños2.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Caños de chapa galvanizada</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img class="imagen-correr"
+                        src="assets/img/Goteros1.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Goteros chapa galvanizada</h2>
+                    <p class="price">$50</p>
+                    <button class="btn-ver">Ver info</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-next">❯</button>
+    </div>
+   
+
+
+    
+
+
+
+    
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container foot ">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Metalúrgica El Rey</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Buena nueva, Guaymallén
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">+54 9 261 635-3271</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">elreymetalurgica@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Navegación</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#abo">Sobre nosotros</a></li>
+                        <li><a class="text-decoration-none" href="contact.html">Contacto</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+
+           
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 El Rey 
+                            | Designed by <a rel="sponsored" href="https://francodavyd.github.io/" target="_blank">Krombyte</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    </footer>
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>

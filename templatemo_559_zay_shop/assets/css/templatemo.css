@@ -1,0 +1,486 @@
+body{
+  background-image: url("/img/planos.def.jpg"); /* Ruta a la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el div */ /* Centra la imagen en el div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  
+}
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+}
+
+/* General */
+.logo { font-weight: 500 !important;}
+.text-warning {  color: #ede861 !important;}
+.text-muted { color: #bcbcbc !important;}
+.text-success { color: tomato !important;}
+.text-light { color: #cfd6e1 !important;}
+.bg-dark { background-color: #212934 !important;}
+.bg-light { background-color: rgba(255, 99, 71, 0.151) !important;
+}
+.bg-black { background-color: #1d242d !important;}
+.bg-success { 
+  background: url(/img/Diseño\ sin\ título\ \(2\).png);
+  border: 2px solid red;
+}
+.bg-success p, h1{
+  font-weight: 700 !important;
+}
+.bg-success h1{
+  text-shadow: 2px 2px 2px #000;
+}
+.btn-success {
+  background-color: #59ab6e !important;
+  border-color: #56ae6c !important;
+}
+.pagination .page-link:hover {color: #000;}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #69bb7e;
+  color: #fff;
+}
+/* Nav */
+.navbar{
+  background: white;
+}
+#templatemo_nav_top { min-height: 40px;}
+#templatemo_nav_top * { font-size: .9em !important;}
+#templatemo_main_nav a { color: #212934;}
+#templatemo_main_nav a:hover { color: #69bb7e;}
+#templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
+.imagenRey{
+  width: 150px;
+}
+.present{
+  height: 90vh;
+}
+.present .present-content{
+  width: 80%;
+  height:50%;
+  background: #00000050;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.present .present-content h1{
+  color: tomato;
+  text-shadow: 2px 2px 4px black;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.present .present-content p{
+  color: #fff;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  padding: 0 150px;
+}
+.present .present-content .button-content {
+  width: fit-content; 
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.present .present-content .button-content .btn-input{
+  background:rgb(255, 166, 150);
+  color: #fff;
+  margin: auto;
+  font-size: 25px !important;
+  font-weight: 900 !important;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  padding: 30px;
+  border-radius: 50px;
+  text-shadow: 2px 2px 4px rebeccapurple;
+  cursor: pointer;
+}
+
+.present .present-content .button-content:hover input{
+  text-shadow: 2px 2px 4px red;
+}
+.servicios{
+  width: 97%;
+  
+}
+.servicios .servicios-content {
+  width: 80vw;
+  margin-top: -410px !important;
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+.servicios .servicios-content .casilla{
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.322);
+  text-align: center;
+}
+
+.servicios .servicios-content .casilla img{
+  text-align: center;
+  margin: 30px;
+  width: 300px;
+  height: 280px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px red;
+}
+
+/*ewewewqewqsdsadsadswe*/
+
+/*Hero-Banner*/
+.hero-banner{
+  
+    width: 100%; /* Ancho del div */
+    height: 95vh; /* Altura del div */
+  
+    opacity: 0.3;
+}
+
+/* Hero Carousel */
+#template-mo-zay-hero-carousel { background: #efefef !important;}
+/* Accordion */
+.templatemo-accordion a { color: #000;}
+.templatemo-accordion a:hover { color: #333d4a;}
+/* Shop */
+.shop-top-menu a:hover { color: #69bb7e !important;}
+/* Product */
+.product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
+.product-wap .product-color-dot.color-dot-red { background:#f71515;}
+.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
+.product-wap .product-color-dot.color-dot-black { background:#000000;}
+.product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
+.product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+.card.product-wap .card .product-overlay {
+  background: rgba(0,0,0,.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a { color: #000;}
+#carousel-related-product .slick-slide:focus { outline: none !important;}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* Carousel Hero */
+#template-mo-zay-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #59ab6e;
+}
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+  color: #59ab6e !important;
+  font-size: 2.8em !important;
+}
+/* Carousel Brand */
+.tempaltemo-carousel .h1 {
+  font-size: .5em !important;
+  color: #000 !important;
+}
+/* Services */
+.services-icon-wap {transition: .3s;
+  cursor: pointer;}
+.services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
+.services-icon-wap:hover {background: gray;}
+/* Contact map */
+.leaflet-control a, .leaflet-control { font-size: 10px !important;}
+.form-control { border: 1px solid #e8e8e8;}
+/* Footer */
+#tempaltemo_footer a { color: #dcdde1;}
+#tempaltemo_footer a:hover { color: #68bb7d;}
+#tempaltemo_footer ul.footer-link-list li { padding-top: 10px;}
+#tempaltemo_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#queO{
+  background: rgba(0, 0, 0, 0.158);
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+#contactT label{
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+.foot{
+  height: 200p;
+}
+
+#tempaltemo_footer ul.footer-icons li:hover i {
+  color: #212934;
+  transition: .5s;
+}
+#tempaltemo_footer .border-light { border-color: #2d343f !important;}
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #templatemo_main_nav .navbar-nav {max-width: 450px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+.container-icon{
+  position: relative;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+ 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+@media screen and (max-width:1250px){
+  .present .present-content{
+    width: 95%;
+    background: #00000050;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .present .present-content h1{
+    color: tomato;
+    font-size: 19px !important;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 900;
+    padding-top: 20px;
+  }
+  .present .present-content p{
+    color: #fff;
+    font-size: 16px !important;
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .present .present-content .button-content {
+    width: fit-content; 
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .present .present-content .button-content .btn-input{
+    background:rgb(255, 166, 150);
+    color: #fff;
+    margin: auto;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 12px;
+    border-radius: 50px;
+    text-shadow: 2px 2px 4px rebeccapurple;
+    cursor: pointer;
+  }
+
+  .servicios{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .servicios .servicios-content {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicios .servicios-content .casilla{
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.322);
+    text-align: center;
+  }
+  
+  .servicios .servicios-content .casilla img{
+    margin: 5px;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    text-shadow: 2px 2px 4px red;
+  }
+  .bg-success h1{ 
+    margin-top: -80px;
+  }
+  .bg-success img{
+    width: 300px;
+    margin-left: 15px;
+  }
+  #queO{
+    width: 95%;
+    margin: auto;
+  }
+  #mapid{
+    width: 95% !important;
+  }
+}
+
+/*Otro 1*/
+
+@media screen and (max-width:400px){
+  .present .present-content{
+    width: 95%;
+    margin-top: 10px;
+    height: 420px;
+  }
+  .present .present-content p{
+    font-size: 15px !important;
+  }
+  
+
+  .servicios{
+    width: 100%;
+    margin-top: 270px;
+  }
+  .servicios .servicios-content {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicios .servicios-content .casilla{
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.322);
+    text-align: center;
+  }
+  
+  .servicios .servicios-content .casilla img{
+    margin: 5px;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    text-shadow: 2px 2px 4px red;
+  }
+}
